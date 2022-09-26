@@ -1,6 +1,9 @@
+from Weapon import Weapon
+
+
 class Robot:
-    def __init__(self):
-        self.name = ""
-        self.health = ""
-        self.active_weapon = ""
+    def __init__(self, name):
+        self.name = name
+        self.health = 100
+        self.active_weapon = Weapon()
         
