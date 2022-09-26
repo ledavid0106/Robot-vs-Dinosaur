@@ -25,8 +25,9 @@ class Battlefield:
                 print(f"{self.robot.name} has {self.robot.health} health remaining.")
             print()
             if self.robot.health >= 0:
+                self.robot.weapon_change()
                 self.robot.attack(self.dinosaur)
-                print(f"{self.robot.name} attacked {self.dinosaur.name} dealing {self.robot.active_weapon.attack_power}!")
+                print(f"{self.robot.name} attacked {self.dinosaur.name} using {self.robot.active_weapon.name} dealing {self.robot.active_weapon.attack_power} damage!")
                 print(f"{self.dinosaur.name} has {self.dinosaur.health} health remaining!")
             print()
             Battlefield.display_winner(self)
