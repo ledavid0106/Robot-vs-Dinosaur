@@ -37,6 +37,3 @@ class Battlefield:
             print(f"The battle of the ages has concluded! {self.robot.name} has won!")
         if self.robot.health <= 0:
             print(f"The battle of the ages has concluded! {self.dinosaur.name} has won!")
-
-
-            
