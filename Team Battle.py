@@ -3,13 +3,13 @@ from Fleet import *
 from Robot import Robot
 from Herd import *
 
-class Battlefield:
+class TeamBattle:
     def __init__(self):
         self.Robos = Fleet()
         self.Herds = Herd()
     
     def run_game(self):
-        Battlefield.display_greeting()
+        TeamBattle.display_greeting()
         print()
         self.battle_phase()
 
@@ -50,5 +50,5 @@ class Battlefield:
             print(f"The battle of the ages has concluded! Team Dinos has won!")
             return True
 
-Past_Vs_Future = Battlefield()
+Past_Vs_Future = TeamBattle()
 Past_Vs_Future.run_game()
