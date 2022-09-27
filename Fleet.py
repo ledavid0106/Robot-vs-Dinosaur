@@ -1,4 +1,4 @@
-from Robot import Robot
+from robot import Robot
 
 
 
@@ -15,3 +15,7 @@ class Fleet:
         self.robots.append(robo1)
         self.robots.append(robo2)
         self.robots.append(robo3)
+
+    def removal(self):
+        if self.robots[0].health <= 0:
+            self.robots.remove(self.robots[0])        

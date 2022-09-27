@@ -1,4 +1,4 @@
-from Dinosaur import Dinosaur
+from dinosaur import Dinosaur
 
 
 
@@ -15,3 +15,7 @@ class Herd:
         self.dino.append(Dino1)
         self.dino.append(Dino2)
         self.dino.append(Dino3)
+
+    def removal2(self):
+        if self.dino[0].health <= 0:
+            self.dino.remove(self.dino[0])
